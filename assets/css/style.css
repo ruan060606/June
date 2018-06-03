@@ -1,0 +1,144 @@
+/* iPhone */
+body {
+	position: relative;
+	min-width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+.anchor {
+	display: block;
+	height: 100px; /*same height as header*/
+	margin-top: -100px; /*same height as header*/
+	visibility: hidden;
+}
+header { /* nav*/
+	padding-top: 100px; /* nav padding */ 
+	text-align: center;
+	height: 100vh;
+	width: 100%;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	background: black;
+	color: white;
+}
+nav h1 {
+	text-align: center;
+	width: 100vw;
+}
+nav ul{
+	text-align: center;
+	padding: 0px
+}
+nav ul li {
+	padding: 10px;
+	list-style: none;
+	display: inline;
+
+}
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+section {
+	height: 100vh;
+	width: 100%;
+	background: gray;
+}
+footer {
+	background: black;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+}
+
+@media (min-width: 576px) {
+	body {
+		padding-top: 101px;
+	}
+	nav {
+		height: 100px;
+	}
+	nav h1 {
+		text-align: center;
+	}
+	nav ul {
+		text-align: center;
+		padding: 0px;
+	}
+	.anchor {
+	display: block;
+	height: 100px; /*same height as header*/
+	margin-top: -100px; /*same height as header*/
+	visibility: hidden;
+	}
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+	nav h1 {
+		float: left;
+		padding: 0px 0px 10px 20px;
+	}
+	nav ul {
+		padding: 30px 0px 20px 300px;
+	}
+	nav ul li {
+		margin-top: 20px;
+		padding:20px;
+	}
+	nav ul li a {
+		text-align: center;
+
+	}
+	.anchor {
+	display: block;
+	height: 100px; /*same height as header*/
+	margin-top: -100px; /*same height as header*/
+	visibility: hidden;
+	}
+}
+
+@media (min-width: 1200px) {
+	nav {
+		padding-top: 10px;
+		height: 100px;
+	}
+	nav h1 {
+		float: left;
+		width: 50%;
+		padding: 0px 0px 10px 20px;
+	}
+	header img {
+		height: 50%;
+		border: 1px solid black;
+		border-radius: 50%;
+	}
+	nav ul {
+		padding: 30px 0px 20px 400px;
+	}
+	nav ul li {
+		padding:20px;
+	}
+	nav ul li a {
+		text-align: center;
+	}
+	.anchor {
+	display: block;
+	height: 100px; /*same height as header*/
+	margin-top: -100px; /*same height as header*/
+	visibility: hidden;
+	}
+}
