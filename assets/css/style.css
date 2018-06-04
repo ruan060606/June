@@ -1,8 +1,15 @@
 /* iPhone */
+html {
+	scroll-behavior: smooth;
+}
 body {
 	position: relative;
-	min-width: 100%;
-	min-height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
 	overflow-x: hidden;
 }
 .anchor {
@@ -13,11 +20,17 @@ body {
 }
 header { /* nav*/
 	padding-top: 100px; /* nav padding */ 
+	padding-top: 50%;
 	text-align: center;
 	height: 100vh;
 	width: 100%;
 }
-
+header img {
+	width: 80%;
+	height: auto;
+	border: 2px solid black;
+	border-radius: 50%;
+}
 nav{
 	position: fixed;
 	top: 0;
@@ -26,14 +39,15 @@ nav{
 	height: 100px;
 	background: black;
 	color: white;
+	z-index: 1;
 }
 nav h1 {
 	text-align: center;
-	width: 100vw;
+	width: 100%;
 }
 nav ul{
 	text-align: center;
-	padding: 0px
+	padding: 0px;
 }
 nav ul li {
 	padding: 10px;
@@ -45,10 +59,42 @@ nav ul li a {
 	text-decoration: none;
 	color: white;
 }
+hr {
+	width: 40px;
+	text-anchor: center;
+}
 section {
-	height: 100vh;
+	height: 50vh;
 	width: 100%;
-	background: gray;
+}
+section h1 {
+	color: white;
+}
+.about {
+	background: #001f3f;
+}
+.skill {
+	background: white;
+}
+.skill h1 {
+	color: black;
+}
+.contact {
+	background: #001f3f;
+}
+section h1 {
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 20px;
+}
+.language {
+	background: black;
+	text-align: center;
+	height: 20vh;
+	color: white;
+}
+.language h1 {
+	margin: 0px;
 }
 footer {
 	background: black;
@@ -62,9 +108,6 @@ footer {
 }
 
 @media (min-width: 576px) {
-	body {
-		padding-top: 101px;
-	}
 	nav {
 		height: 100px;
 	}
@@ -84,16 +127,22 @@ footer {
 }
 
 @media (min-width: 768px) {
-
+	header {
+			padding-top: 10%;
+	}
 }
 
 @media (min-width: 992px) {
+	nav {
+		height: 100px;
+	}
 	nav h1 {
-		float: left;
-		padding: 0px 0px 10px 20px;
+		text-align: center;
+		width: 100%;
 	}
 	nav ul {
-		padding: 30px 0px 20px 300px;
+		width: 100%;
+		text-align: center;
 	}
 	nav ul li {
 		margin-top: 20px;
@@ -102,6 +151,10 @@ footer {
 	nav ul li a {
 		text-align: center;
 
+	}
+	header {
+		height: 100vh;
+		padding-top: 20%;
 	}
 	.anchor {
 	display: block;
@@ -118,16 +171,29 @@ footer {
 	}
 	nav h1 {
 		float: left;
-		width: 50%;
+		width: 20%;
 		padding: 0px 0px 10px 20px;
 	}
+	header {
+		position: relative;
+		height: 100%;
+		text-align: center;
+		padding-top: 10%;
+		background-image: linear-gradient(#ff9d2f, #ff6126);
+	}
 	header img {
-		height: 50%;
-		border: 1px solid black;
+		width: 20%;
+		height: auto;
+		border: 3px solid black;
 		border-radius: 50%;
 	}
+	header h2 {
+		padding-bottom: 50%;
+	}
 	nav ul {
-		padding: 30px 0px 20px 400px;
+		float: right;
+		width: 20%;
+		padding: 30px 0px 10px 0px;
 	}
 	nav ul li {
 		padding:20px;
@@ -135,18 +201,58 @@ footer {
 	nav ul li a {
 		text-align: center;
 	}
-	section h1{
+	section h1 {
+		position: relative;
 		margin-top: 0px;
 		text-align: center;
 		padding-top: 20px;
 	}
+	svg polygon{
+		  position: absolute;
+  			bottom: 0;
+  		width: 100%;
+  		height: 10vw;
+	}
+	.about {
+		margin-top: -5vw;
+	  background-image: -webkit-linear-gradient(top left, #777, #111);
+	  background-image: -o-linear-gradient(top left, #777, #111);
+	  background-image: linear-gradient(to bottom right, #777, #111);
+	  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 5vw)
+  );
+	}
 	.skill {
 		background: white;
+	}
+	.skill h1{
+		color: black;
+	}
+	.language {
+		background: black;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 200px;
+	}
+	.language h1 {
+		color: white;
+		text-align: center;
 	}
 	.anchor {
 	display: block;
 	height: 100px; /*same height as header*/
 	margin-top: -100px; /*same height as header*/
 	visibility: hidden;
+	}
+}
+@media (min-width: 1440px) {
+	nav ul {
+		float: right;
+		width: 20%;
+		padding: 30px 0px 0px 0px;
 	}
 }

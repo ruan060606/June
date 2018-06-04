@@ -1,12 +1,13 @@
-var waypoint = new Waypoint({
-	element: document.getElementById("about"),
-	handler: function(direction){
-		if(direction === 'down'){
-			document.getElementById('testing').innerHTML = 'testing';
-			console.log(this.triggerPoint);
-			console.log(this)
-		}else {
-			document.getElementById('testing').innerHTML = 'text';
-		}
-	}
+$(document).ready(function() {
+	'use strict'
+	//reset//
+	$('.myNavbar').hide(0);
+	//nav appear function //
+	$(document).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+                $('.myNavbar').fadeIn();
+            }else {
+                $('.myNavbar').fadeOut();
+            }
+	})
 })

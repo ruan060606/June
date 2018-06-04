@@ -23,13 +23,14 @@
 
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+
+<body id="body">
 
 	<!-- Navbar -->
-	<nav>
+	<nav class="myNavbar">
 		<div class="row">
 			<div class="col">
-				<h1>SR</h1>
+				<h1>TRADESHIFT</h1>
 			</div>
 
 			<div class="col">
@@ -48,7 +49,7 @@
 		</div> <!--row-->
 	</nav>
 
-
+	<!-- Header with Image -->
 	<header id="myHeader">
 			<img id="myPicture" src="assets/image/profile.JPG" alt="picture">
 		<h2>
@@ -60,28 +61,76 @@
 	<section class="about">
 		<h1>About</h1>
 		<hr>
-
+		
+		<div class="container">
 		<p id="testing">
-			text
+					
+		            A web developer based in the Bay Area •
+		            A UC Berkeley Extension Full Stack Coding Program graduate • 
+		            A UC Davis alumni • 
+		            A video game hobbyist • 
+		            A part time hip-hop dancer • 
+		            A tech enthusiast • 
+		            A Day Late Friend • 
+		            A student of life
 		</p>
+		</div>
+
 	</section>
 
+
+	
 	<span id="skill" class="anchor"></span>
 	<section class="skill">
 		<h1>Skill</h1>
+		<hr>
 		<!--List of Computer Language and project -->
+
 	</section>
+
+	<div class="language">
+			<h1>Languages</h1>
+		</div>
 
 	<span id="contact" class="anchor"></span>
 	<section class="contact">
 		<h1>Contact</h1>
+		<hr>
 		<!--form and store to database -->
+		<div class="row">
+			<div class="col"></div>
+			<div class="col">
+				<div class="container">
+					<form action="">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="firstName">First</label>
+								<input type="text" class="form-control" id="firstName" placeholder="First">
+							</div>
+							<div class="col-md-6">
+								<label for="lastName">Last</label>
+								<input type="text" class="form-control" id="lastName" placeholder="Last">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="inputEmail">Email Address</label>
+							<input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<footer>
 		<p>@Copyright 2017</p>
 	</footer>
 	
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
